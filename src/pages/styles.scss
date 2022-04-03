@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+}
+.main-menu {
+  display: flex;
+  margin: 50px auto 50px;
+  max-width: 900px;
+  > div {
+    flex: 0 1 300px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  label {
+    font-size: 1.1em;
+
+    input:checked + span {
+      font-weight: bolder;
+      color: green;
+    }
+    input:disabled + span {
+      text-decoration: line-through;
+      opacity: 0.4;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
+  outline: none;
+  background: transparent;
+  font-size: 1.1em;
+  color: #fff;
+  padding: 7px 0;
+  border: 3px solid #fff;
+}
+
+.btn:disabled {
+  opacity: 0.3;
+}
+
+header h1 {
+  text-align: center;
+}
